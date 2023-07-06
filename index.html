@@ -5,24 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Kelli's Portfolio</title>
 </head>
 <body>
+    <!-- menu of anchor links -->
     <div id="menu">
-        home
-        skills
-        projects
-        about
-        contact
+        <a href="#introduction">home</a>
+        <a href="#biography">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#footer">contact</a>
     </div>
+
+    <!-- introduction of name, title, and contact links -->
     <div id="introduction">
-        <h1>
-            kelli white
-        </h1>
-        <h2>
-            fullstack software engineer
-        </h2>
+        <div id="name">
+            <h1>
+                kelli white
+            </h1>
+            <h2>
+                fullstack software engineer
+            </h2>
+        </div>
+        <div id="contact">
+            <p>
+                linkedin
+                github
+                email
+            </p>
+        </div>
     </div>
+
+    <!-- list of skills and short bio-->
+    <div id="biography">
+        <div id="about">
+            <p>
+                about kelli
+            </p>
+        </div>
+        <div id="skills">
+            <p>
+                skills
+            </p>
+        </div>
+    </div>
+
+    <!-- project links -->
     <div id="projects">
         <p>
             eros
@@ -30,17 +59,25 @@
             spaceman
         </p>
     </div>
-    <div id="about">
-        <p>
-            about kelli
-        </p>
-    </div>
-    <div id="contact">
-        <p>
-            linkedin
-            github
-            email
-        </p>
-    </div>
+
+    <footer>
+        <!-- email contact form -->
+        <div id="email-form">
+            <h2>let's get in touch!</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </footer>
+
 </body>
 </html>

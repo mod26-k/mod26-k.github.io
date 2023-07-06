@@ -1,30 +1,101 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #fffff;
-    color: #fff;
+    flex-direction: column;
+    background-color: #ffb1cf;
+    color: #262626;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     text-align: center;
   }
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+  a {
+    color: #262626;
+    text-decoration: none;
+  }
+
   #menu {
-    padding: 10px;
+    padding: 40px;
     text-align: center;
-    background-color: #000;
+    /* background-color: #000;
     background-image: linear-gradient(#000000, #ffffff);
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
     background-size: 100% 100%;
-    height: 50px;
+    height: 50px; */
   }
+
+  #menu a {
+    margin-right: 40px;
+  }
+
   #introduction {
     padding: 10px;
-    color: #cf9ed7;
+  }
+  #biography {
+    padding: 10px;
   }
   #projects {
     padding: 10px;
   }
-  #about {
+  footer {
+    margin-top: auto;
     padding: 10px;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #contact {
+  #email-form {
+    margin: 0 auto;
     padding: 10px;
+    width: 50%;
+  }
+
+  #email-form input[type="text"],
+  #email-form input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: beige;
+}
+
+  #email-form textarea {
+    width: 100%;
+    height: 6rem;
+    box-sizing: border-box;
+    border: none;
+    background-color: beige;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  #email-form .form-group {
+    border: 3px solid #ffb1cf;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #email-form button[type="submit"] {
+    background-color: #ffb1cf;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    width: 50%
+  }
+  
+  #email-form button[type="submit"]:hover {
+    background-color: white;
+    color: beige;
   }
