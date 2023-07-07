@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
     <title>Kelli's Portfolio</title>
 </head>
 <body>
     <!-- menu of anchor links -->
-    <div id="menu">
-        <a href="#introduction">home</a>
-        <a href="#biography">skills</a>
-        <a href="#projects">projects</a>
-        <a href="#footer">contact</a>
-    </div>
+    <header>
+        <div id="menu">
+            <a href="#introduction">home</a>
+            <a href="#biography">skills</a>
+            <a href="#projects">projects</a>
+            <a href="#footer">contact</a>
+        </div>
+    </header>
+
 
     <!-- introduction of name, title, and contact links -->
     <div id="introduction">
@@ -30,9 +35,15 @@
         </div>
         <div id="contact">
             <p>
-                linkedin
-                github
-                email
+                <a href="https://www.linkedin.com/in/kellirinawhite/" target="_blank">
+                    <img src="icons/linkedin.png">
+                </a>
+                <a href="https://github.com/mod26-k" target="_blank">
+                    <img src="icons/github.png">
+                </a>
+                <a href="/#footer">
+                    <img src="icons/mail.png">
+                </a>
             </p>
         </div>
     </div>
@@ -52,18 +63,66 @@
     </div>
 
     <!-- project links -->
-    <div id="projects">
-        <p>
-            eros
-            mktpl-vault
-            spaceman
-        </p>
-    </div>
+    <!-- <div id="projects">
+        <div class="tab">
+          <input type="radio" id="tab1" name="tabs" checked>
+          <label for="tab1">eros</label>
+          <div class="tab-content">
+            <p>Eros is a dating app that allows users to match each other over date ideas rather than swiping on their profiles.
+            </p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" id="tab2" name="tabs">
+          <label for="tab2">mktpl-vault</label>
+          <div class="tab-content">
+            <p>mktpl content</p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" id="tab3" name="tabs">
+          <label for="tab3">spaceman</label>
+          <div class="tab-content">
+            <p>spaceman content</p>
+          </div>
+        </div>
+    </div> -->
+
+    <div class="project-container">
+        <input type="radio" id="tab1" name="tab" checked>
+            <label for="tab1"><i class="fa fa-eros"></i> eros</label>
+        <input type="radio" id="tab2" name="tab">
+            <label for="tab2"><i class="fa fa-mktpl"></i> mktpl-vault</label>
+        <input type="radio" id="tab3" name="tab">
+            <label for="tab3"><i class="fa fa-spaceman"></i> spaceman</label>
+        <div class="line"></div>
+        <div class="content-container">
+          <div class="content" id="c1">
+            <a href="https://github.com/mod26-k/eros" target="_blank"> 
+                <h3>eros</h3>
+            </a>
+            <p>eros is a dating app that allows users to match each other over date ideas rather than swiping on their profiles.</p>
+          </div>
+          <div class="content" id="c2">
+            <a href="https://mktpl-vault.herokuapp.com/" target="_blank"> 
+                <h3>mktpl-vault</h3>
+            </a>
+            <p>mktpl-vault is a data storage site that allows you to store all your cids in one secure place.</p>
+          </div>
+          <div class="content" id="c3">
+            <a href="https://mod26-k.github.io/spaceMan/" target="_blank"> 
+                <h3>spaceman</h3>
+            </a>
+            <p>spaceman is a word-guessing game where the computer generates a random word within a specific theme, and the user has several attempts to guess the correct letters to reveal the word. If the user uses all attempts and does not guess the word correctly, they lose. If they do, they win.</p>
+          </div>
+        </div>
+      </div>
+      
 
     <footer>
         <!-- email contact form -->
         <div id="email-form">
-            <h2>let's get in touch!</h2>
+            <h2>Let's Connect!</h2>
         <form>
             <div class="form-group">
                 <input type="text" placeholder="Name" required>
@@ -79,5 +138,6 @@
         </div>
     </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

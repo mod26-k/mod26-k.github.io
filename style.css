@@ -6,25 +6,39 @@ body {
     margin: 0;
     padding: 0;
     flex-direction: column;
-    background-color: #ffb1cf;
+    background-color: #f1e9dc;
     color: #262626;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     text-align: center;
   }
+
+
+/* fonts and headers */
   h1 {
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
   }
 
+  h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 200%;
+  }
+
+
+/* links and menu */
   a {
     color: #262626;
     text-decoration: none;
   }
 
   #menu {
-    padding: 40px;
-    text-align: center;
+    padding: 10px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
     /* background-color: #000;
     background-image: linear-gradient(#000000, #ffffff);
     opacity: 1;
@@ -37,20 +51,100 @@ body {
     margin-right: 40px;
   }
 
+  #menu a:hover {
+    color: grey;
+  }
+
+/* about me section */
   #introduction {
+    margin-top: 250px;
     padding: 10px;
+    border-bottom: 2px solid black;
+    width: 100%;
   }
   #biography {
     padding: 10px;
+    border-bottom: 2px solid black;
+    width: 100%;
   }
-  #projects {
+  a img {
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+  }
+
+/* section break */
+/* .section-divider {
+    border: none;
+    border-top: 2px solid black;
+    width: 100%;
+  }   */
+
+
+/* projects and project tabs */
+  /* #projects {
     padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f1e9dc;
+    width: 50%;
+    margin-bottom: 40px;    
+  } */
+
+  .project-container {
+    padding: 10px;
+    background-color: #f2efeb;
+    width: 100%;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+    width: 100%;
   }
+
+  .project-container a:hover {
+    color: grey;
+  }
+
+  .tab {
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f2efeb;
+  }
+  
+  input[type="radio"]:checked + label {
+    background-color: white;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  input[type="radio"]:checked + label + .tab-content {
+    display: block;
+  }
+  
+  .content {
+    padding: 10px;
+    text-align: center;
+  }
+
+/* footer and email form */
   footer {
     margin-top: auto;
     padding: 10px;
     width: 100%;
-    background-color: beige;
+    background-color: #f1e9dc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,8 +159,9 @@ body {
   #email-form input[type="email"] {
   width: 100%;
   box-sizing: border-box;
+  height: 2rem;
   border: none;
-  background-color: beige;
+  background-color: #f2efeb;
 }
 
   #email-form textarea {
@@ -74,19 +169,19 @@ body {
     height: 6rem;
     box-sizing: border-box;
     border: none;
-    background-color: beige;
+    background-color: #f2efeb;
     font-family: 'Inter', sans-serif;
   }
   
   #email-form .form-group {
-    border: 3px solid #ffb1cf;
+    border: 3px solid #f1e9dc;
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 10px;
   }
   
   #email-form button[type="submit"] {
-    background-color: #ffb1cf;
+    background-color: #f1e9dc;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -97,5 +192,7 @@ body {
   
   #email-form button[type="submit"]:hover {
     background-color: white;
-    color: beige;
+    color: #f1e9dc;
   }
+
+  
