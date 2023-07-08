@@ -123,21 +123,24 @@
         <!-- email contact form -->
         <div id="email-form">
             <h2>Let's Connect!</h2>
-        <form>
-            <div class="form-group">
-                <input type="text" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <textarea placeholder="Message" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+            <form action="/send-email" method="POST">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </footer>
 
 <script src="script.js"></script>
+<script src="server.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nodemailer-browser@1.10.0/nodemailer.browser.js"></script>
+
 </body>
 </html>

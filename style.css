@@ -33,6 +33,10 @@ body {
     text-decoration: none;
   }
 
+  a:hover {
+    color: grey;
+  }
+
   #menu {
     padding: 10px;
     text-align: left;
@@ -51,10 +55,6 @@ body {
     margin-right: 40px;
   }
 
-  #menu a:hover {
-    color: grey;
-  }
-
 /* about me section */
   #introduction {
     margin-top: 250px;
@@ -68,17 +68,9 @@ body {
     width: 100%;
   }
   a img {
-    width: 50px; /* Set the desired width */
-    height: 50px; /* Set the desired height */
+    width: 50px;
+    height: 50px;
   }
-
-/* section break */
-/* .section-divider {
-    border: none;
-    border-top: 2px solid black;
-    width: 100%;
-  }   */
-
 
 /* projects and project tabs */
   /* #projects {
@@ -97,10 +89,6 @@ body {
     margin-bottom: 40px;
     border-bottom: 2px solid black;
     width: 100%;
-  }
-
-  .project-container a:hover {
-    color: grey;
   }
 
   .tab {
@@ -181,7 +169,7 @@ body {
   }
   
   #email-form button[type="submit"] {
-    background-color: #f1e9dc;
+    background-color: #f2efeb;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -192,7 +180,7 @@ body {
   
   #email-form button[type="submit"]:hover {
     background-color: white;
-    color: #f1e9dc;
+    color: black;
   }
 
   
