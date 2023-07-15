@@ -43,12 +43,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    /* background-color: #000;
-    background-image: linear-gradient(#000000, #ffffff);
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    background-size: 100% 100%;
-    height: 50px; */
+    margin-left: 20px;
   }
 
   #menu a {
@@ -66,21 +61,33 @@ body {
     padding: 10px;
     border-bottom: 2px solid black;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2ede6;
   }
+
+  #about {
+    display: flex;
+    text-align: left;
+    width: 55%;
+    margin-left: 60px;
+    margin-right: 40px;
+  }
+
+  #skills {
+    text-align: center;
+    width: 45%;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Raleway', sans-serif;
+  }
+
   a img {
     width: 50px;
     height: 50px;
   }
 
 /* projects and project tabs */
-  /* #projects {
-    padding: 10px;
-    display: flex;
-    align-items: flex-start;
-    background-color: #f1e9dc;
-    width: 50%;
-    margin-bottom: 40px;    
-  } */
 
   .project-container {
     padding: 10px;
@@ -89,10 +96,25 @@ body {
     margin-bottom: 40px;
     border-bottom: 2px solid black;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
 
-  .tab {
+  .tab-container {
+    margin-top: 10px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: auto;
+  }
+
+  .content-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
   }
   
   input[type="radio"] {
@@ -121,11 +143,15 @@ body {
   input[type="radio"]:checked + label + .tab-content {
     display: block;
   }
-  
+
   .content {
     padding: 10px;
-    text-align: center;
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 40px;
   }
+
+  
 
 /* footer and email form */
   footer {

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <title>Kelli's Portfolio</title>
 </head>
 <body>
@@ -52,74 +53,93 @@
     <div id="biography">
         <div id="about">
             <p>
-                about kelli
+                <span style="margin-left:2em">I</span> am a fullstack software engineer with a background in film and TV production. My work experience in the industry has made me an organized person with excellent time management skills, as well as a team player who understands the importance of collaboration in a large-scale project. I am motivated by the potential to make a positive impact, even if it is just for one person. Initiating projects and meeting deadlines are two of my strengths. I take pride in my ability to get things started and finish them on time, no matter the size or scope of the project. With my experience and dedication, I am confident that I can be a valuable asset to any team.
             </p>
         </div>
         <div id="skills">
-            <p>
-                skills
-            </p>
+            <h3>
+                Python
+                <span style="margin-left: 3em">
+                    Django
+                </span>
+                <br>
+                <br>
+
+                Javascript
+                <span style="margin-left: 3em">
+                    CSS
+                </span>
+                <span style="margin-left: 3em">
+                    HTML
+                </span>
+                <br>
+                <br>
+                React.js
+                <span style="margin-left: 3em">
+                    Node.js
+                </span>
+                <br>
+                <br>
+                Object Oriented Programming
+                <br>
+                <br>
+                MongoDB
+                <span style="margin-left: 3em">
+                    Express
+                </span>
+                <br>
+                <br>
+            </h3>
         </div>
     </div>
 
     <!-- project links -->
-    <!-- <div id="projects">
-        <div class="tab">
-          <input type="radio" id="tab1" name="tabs" checked>
-          <label for="tab1">eros</label>
-          <div class="tab-content">
-            <p>Eros is a dating app that allows users to match each other over date ideas rather than swiping on their profiles.
-            </p>
-          </div>
-        </div>
-        <div class="tab">
-          <input type="radio" id="tab2" name="tabs">
-          <label for="tab2">mktpl-vault</label>
-          <div class="tab-content">
-            <p>mktpl content</p>
-          </div>
-        </div>
-        <div class="tab">
-          <input type="radio" id="tab3" name="tabs">
-          <label for="tab3">spaceman</label>
-          <div class="tab-content">
-            <p>spaceman content</p>
-          </div>
-        </div>
-    </div> -->
-
     <div class="project-container">
-        <input type="radio" id="tab1" name="tab" checked>
-            <label for="tab1"><i class="fa fa-eros"></i> eros</label>
-        <input type="radio" id="tab2" name="tab">
-            <label for="tab2"><i class="fa fa-mktpl"></i> mktpl-vault</label>
-        <input type="radio" id="tab3" name="tab">
-            <label for="tab3"><i class="fa fa-spaceman"></i> spaceman</label>
+        <div class="tab-container">
+            <input type="radio" id="tab1" name="tab" checked>
+                <label for="tab1"><i class="fa fa-eros"></i> eros</label>
+            <input type="radio" id="tab2" name="tab">
+                <label for="tab2"><i class="fa fa-mktpl"></i> mktpl-vault</label>
+            <input type="radio" id="tab3" name="tab">
+                <label for="tab3"><i class="fa fa-spaceman"></i> spaceman</label>
+        </div>
         <div class="line"></div>
         <div class="content-container">
           <div class="content" id="c1">
             <a href="https://github.com/mod26-k/eros" target="_blank"> 
-                <h3>eros</h3>
+                <h3 id="title">eros</h3>
             </a>
-            <p>eros is a dating app that allows users to match each other over date ideas rather than swiping on their profiles.</p>
+            <p>eros is a dating app that allows users to match each other over date ideas rather than swiping on their profiles. The idea for this app came to me as a way to change the way current dating apps work.
+                <br>
+                <br>
+            Technologies used: Python, CSS, HTML, Django
+            </p>
           </div>
           <div class="content" id="c2">
             <a href="https://mktpl-vault.herokuapp.com/" target="_blank"> 
-                <h3>mktpl-vault</h3>
+                <h3 id="title">mktpl-vault</h3>
             </a>
-            <p>mktpl-vault is a data storage site that allows you to store all your cids in one secure place.</p>
+            <p>mktpl-vault is a data storage site that allows you to store all your cids in one secure place. As we transition to Web3, users will need a way to store all their asset addresses-- similar to how we use password managers currently.
+                <br>
+                <br>
+            Technologies used: MongoDB, Express, React, Node.js, Javascript, CSS, HTML
           </div>
           <div class="content" id="c3">
             <a href="https://mod26-k.github.io/spaceMan/" target="_blank"> 
-                <h3>spaceman</h3>
+                <h3 id="title">spaceman</h3>
             </a>
-            <p>spaceman is a word-guessing game where the computer generates a random word within a specific theme, and the user has several attempts to guess the correct letters to reveal the word. If the user uses all attempts and does not guess the word correctly, they lose. If they do, they win.</p>
+            <p>spaceman is a word-guessing game where the computer generates a random word within a specific theme, and the user has several attempts to guess the correct letters to reveal the word. If the user uses all attempts and does not guess the word correctly, they lose. If they do, they win.
+                <br>
+                <br>
+                Technologies used: Javascript, CSS, HTML
+            </p>
           </div>
         </div>
       </div>
       
 
     <footer>
+
         <!-- email contact form -->
         <div id="email-form">
             <h2>Let's Connect!</h2>
