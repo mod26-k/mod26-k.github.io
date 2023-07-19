@@ -15,27 +15,32 @@
 <body>
     <!-- menu of anchor links -->
     <header>
-        <div id="menu">
-            <a href="#introduction">home</a>
-            <a href="#biography">skills</a>
-            <a href="#projects">projects</a>
-            <a href="#footer">contact</a>
-        </div>
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li><a href="#introduction">home</a></li>
+                    <li><a href="#biography">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#footer">contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
 
     <!-- introduction of name, title, and contact links -->
-    <div id="introduction">
+    
+    <section class="section" id="introduction">
         <div id="name">
             <h1>
-                kelli white
+            Hi, I'm Kelli!
             </h1>
-            <h2>
-                fullstack software engineer
-            </h2>
+            <h4>
+            a film student turned software engineer with a passion for starting new projects.
+            </h4>
         </div>
         <div id="contact">
-            <p>
+            <div id="image-container"></div>
                 <a href="https://www.linkedin.com/in/kellirinawhite/" target="_blank">
                     <img src="icons/linkedin.png">
                 </a>
@@ -45,18 +50,27 @@
                 <a href="/#footer">
                     <img src="icons/mail.png">
                 </a>
-            </p>
+            </div>
         </div>
-    </div>
+        </section>
+          
 
     <!-- list of skills and short bio-->
-    <div id="biography">
+    <section class="section" id="biography">
         <div id="about">
-            <p>
-                <span style="margin-left:2em">I</span> am a fullstack software engineer with a background in film and TV production. My work experience in the industry has made me an organized person with excellent time management skills, as well as a team player who understands the importance of collaboration in a large-scale project. I am motivated by the potential to make a positive impact, even if it is just for one person. Initiating projects and meeting deadlines are two of my strengths. I take pride in my ability to get things started and finish them on time, no matter the size or scope of the project. With my experience and dedication, I am confident that I can be a valuable asset to any team.
+            <p style="line-height: 1.5;">
+                <span style="margin-left:2em">I'm</span> a film student turned software engineer with a passion for starting new projects.
+            <br>
+            <br>
+                <span style="margin-left:2em">If</span> I'm not traveling and exploring new cities, I find myself spending my free time studying and obtaining more certificates on Coursera.
             </p>
         </div>
         <div id="skills">
+            <h1>
+                <span style="margin-left: 1em">My Toolkit:
+                </span>
+            </h1>
+            <br>
             <h3>
                 Python
                 <span style="margin-left: 3em">
@@ -91,10 +105,13 @@
                 <br>
             </h3>
         </div>
-    </div>
+    </section>
 
     <!-- project links -->
-    <div class="project-container">
+    <section class="project-container" id="projects">
+        <!-- <h1>
+            My Work
+        </h1> -->
         <div class="tab-container">
             <input type="radio" id="tab1" name="tab" checked>
                 <label for="tab1"><i class="fa fa-eros"></i> eros</label>
@@ -109,37 +126,36 @@
             <a href="https://github.com/mod26-k/eros" target="_blank"> 
                 <h3 id="title">eros</h3>
             </a>
-            <p>eros is a dating app that allows users to match each other over date ideas rather than swiping on their profiles. The idea for this app came to me as a way to change the way current dating apps work.
+            <p style="line-height: 1.5;">eros is a dating app that allows users to match each other over date ideas rather than swiping on their profiles. The idea for this app came to me as a way to change the way current dating apps work.
                 <br>
                 <br>
-            Technologies used: Python, CSS, HTML, Django
+            <b>Technologies used:</b> Python, CSS, HTML, Django
             </p>
           </div>
           <div class="content" id="c2">
             <a href="https://mktpl-vault.herokuapp.com/" target="_blank"> 
                 <h3 id="title">mktpl-vault</h3>
             </a>
-            <p>mktpl-vault is a data storage site that allows you to store all your cids in one secure place. As we transition to Web3, users will need a way to store all their asset addresses-- similar to how we use password managers currently.
+            <p style="line-height: 1.5;">mktpl-vault is a data storage site that allows you to store all your cids in one secure place. As we transition to Web3, users will need a way to store all their asset addresses-- similar to how we use password managers currently.
                 <br>
                 <br>
-            Technologies used: MongoDB, Express, React, Node.js, Javascript, CSS, HTML
+            <b>Technologies used:</b> MongoDB, Express, React, Node.js, Javascript, CSS, HTML
           </div>
           <div class="content" id="c3">
             <a href="https://mod26-k.github.io/spaceMan/" target="_blank"> 
                 <h3 id="title">spaceman</h3>
             </a>
-            <p>spaceman is a word-guessing game where the computer generates a random word within a specific theme, and the user has several attempts to guess the correct letters to reveal the word. If the user uses all attempts and does not guess the word correctly, they lose. If they do, they win.
+            <p style="line-height: 1.5;">spaceman is a word-guessing game where the computer generates a random word within a specific theme, and the user has several attempts to guess the correct letters to reveal the word. If the user uses all attempts and does not guess the word correctly, they lose. If they do, they win.
                 <br>
                 <br>
-                Technologies used: Javascript, CSS, HTML
+            <b>Technologies used:</b> Javascript, CSS, HTML
             </p>
           </div>
         </div>
-      </div>
+    </section>
       
 
-    <footer>
-
+    <footer id="footer">
         <!-- email contact form -->
         <div id="email-form">
             <h2>Let's Connect!</h2>
