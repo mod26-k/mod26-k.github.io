@@ -23,48 +23,39 @@ contents.forEach((content, index) => {
 
 
 //email form
-// const contactForm = document.querySelector("#contact-form");
-// const submitBtn = document.querySelector(".submit-btn");
-// const nameInput = document.querySelector("#user_name");
-// const emailInput = document.querySelector("#user_email");
-// const messageInput = document.querySelector("#message");
+const contactForm = document.querySelector("#contact-form");
+const submitBtn = document.querySelector(".submit-btn");
+const nameInput = document.querySelector("#senderName");
+const emailInput = document.querySelector("#email");
+const messageInput = document.querySelector("#message");
 
-// const publicKey = "SWa_QQT2YR2s_8gwW"
-// const serviceID = "service_vs3a3wu"
-// const templateID = "template_1qyfpia"
+const publicKey = "SWa_QQT2YR2s_8gwW"
+const serviceID = "service_v0cevif"
+const templateID = "template_1qyfpia"
 
-// emailjs.init(publicKey);
-// contactForm.addEventListener("submit", e => {
-//   e.preventDefault();
-//   submitBtn.innerText = "Sending ...";
-//   const inputFields = {
-//     name: nameInput.value,
-//     email: emailInput.value,
-//     message: messageInput.value,
-//   }
+emailjs.init(publicKey);
+contactForm.addEventListener("submit", e => {
+  e.preventDefault();
+  submitBtn.innerText = "Sending ...";
+  const inputFields = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value
+  };
 
-//   emailjs.send(serviceID, templateID, inputFields)
-//     .then(() => {
-//       submitBtn.innerText = "Sent!";
+  console.log("Name:", inputFields.name);
+  console.log("Email:", inputFields.email);
+  console.log("Message:", inputFields.message);
 
-//       nameInput.value = "";
-//       emailInput.value = "";
-//       messageInput.value = "";
-//     }, (error) => {
-//       console.log(error);
-//       submitBtn.innerText = "Hmm, that didn't work.";
-//     });
-// });
+  emailjs.send(serviceID, templateID, inputFields)
+    .then(() => {
+      submitBtn.innerText = "Sent!";
 
-
-//send email
-function sendEmail() {
-  var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value
-  }
-  emailjs.send("service_vs3a3wu", "template_1qyfpia", params).then(function (res) {
-    alert("Success! " + res.status)
-  })
-}
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
+    }, (error) => {
+      console.log(error);
+      submitBtn.innerText = "Hmm, that didn't work.";
+    });
+});
